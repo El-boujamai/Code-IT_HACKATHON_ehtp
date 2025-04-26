@@ -1,0 +1,11 @@
+{
+    "name": "codevision-vr",
+    "scripts": {
+        "start:frontend": "cd frontend && npm start",
+        "start:backend": "cd backend && npm start",
+        "dev": "concurrently \"npm run start:frontend\" \"npm run start:backend\""
+    },
+    "devDependencies": {
+        "concurrently": "^7.6.0"
+    }
+}

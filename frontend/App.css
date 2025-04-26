@@ -1,0 +1,154 @@
+.app {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background-color: #1e1e1e;
+    color: #f0f0f0;
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #2d2d2d;
+    padding: 0.5rem 1rem;
+    height: 60px;
+  }
+  
+  .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #61dafb;
+  }
+  
+  .nav-tabs {
+    display: flex;
+    gap: 1rem;
+  }
+  
+  .nav-tabs button {
+    background: none;
+    border: none;
+    color: #e0e0e0;
+    font-size: 1rem;
+    cursor: pointer;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+  }
+  
+  .nav-tabs button.active {
+    background-color: #3e3e3e;
+    color: #61dafb;
+  }
+  
+  .content-area {
+    flex: 1;
+    padding: 1rem;
+    overflow: auto;
+  }
+  
+  .editor-container {
+    display: flex;
+    flex-direction: column;
+    height: calc(100vh - 100px);
+  }
+  
+  .code-editor {
+    flex: 1;
+    border-radius: 4px;
+    overflow: hidden;
+  }
+  
+  .button-container {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+    justify-content: center;
+  }
+  
+  button {
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .visualize-button {
+    background-color: #61dafb;
+    color: #1e1e1e;
+  }
+  
+  .vr-button {
+    background-color: #bb86fc;
+    color: #1e1e1e;
+  }
+  
+  .visualization-container {
+    height: calc(100vh - 100px);
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .visualization-canvas {
+    flex: 1;
+    background-color: #2d2d2d;
+    border-radius: 4px;
+  }
+  
+  .visualization-placeholder {
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #2d2d2d;
+    border-radius: 4px;
+    font-size: 1.2rem;
+    color: #a0a0a0;
+  }
+  
+  .code-structure {
+    margin-top: 1rem;
+    background-color: #2d2d2d;
+    padding: 1rem;
+    border-radius: 4px;
+    max-height: 20vh;
+    overflow: auto;
+  }
+  
+  pre {
+    margin: 0;
+    font-family: 'Courier New', monospace;
+  }
+  
+  .concept-library {
+    padding: 1rem;
+  }
+  
+  .concept-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1rem;
+    margin-top: 1rem;
+  }
+  
+  .concept-card {
+    background-color: #2d2d2d;
+    padding: 1.5rem;
+    border-radius: 4px;
+    transition: transform 0.2s;
+  }
+  
+  .concept-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  }
+  
+  .concept-card h3 {
+    color: #61dafb;
+    margin-top: 0;
+    margin-bottom: 1rem;
+  }
+  
